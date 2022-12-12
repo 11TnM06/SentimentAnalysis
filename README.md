@@ -1,6 +1,7 @@
 # Sentiment Analysis - VNU
-
+    
 ## Giới thiệu
+Classify Food Reviews using Sentiment Analysis techniques
 
 ### Thành viên
 
@@ -12,7 +13,7 @@
 
 ## Kết quả
 
-| MODEL | Bert | Resnet | Vgg |
+| MODEL | Bert | ResNet-18 | VGG-11 |
 |--------------|-------|------|-------|
 | AUC - ROC | 0.94 | 0.89 | 0.903 |
 ## Chuyển đến thư mục làm việc hiện tại
@@ -29,20 +30,28 @@ Các thư viện được ghi trong file requirements.txt trong cùng thư mục
 
 ## Dataset
 
-- Sử dụng tập dữ liệu trong cuộc thi bao gồm các file
+Sử dụng tập dữ liệu trong cuộc thi bao gồm các file
   - Train.json
   - Train.csv
   - Test.csv
-- Thư mục làm việc của dataset
+
+Thư mục làm việc của dataset
   - Đối với ```foody-resnet.ipynb```  và ```foody-vgg.ipynb```: ```"/kaggle/input/foodyvnu/Data"```
   - Đối với ```foody-bert.ipynb```: ```"/kaggle/input/trainfoodjson/"``` và ```/kaggle/input/dataset/```
 
 ## Model
 
+Đầu ra của mô hình được lưu trong thư mục /kaggle/working.
+
+Trong đó:
+- File có dạng .csv là đầu ra của bài toán 
+- File có dạng .pth là model được trích xuất.
 ## Train
+
+Mô hình được huấn luyện trên Kaggle. 
 
 Đối với code VGG và Resnet, cần lựa chọn model trước khi huấn luyện.
 
-Nếu dùng VGG11: ```img_model='vgg'```
+- Nếu dùng VGG11: ```img_model='vgg'```
 
-Nếu dùng ResNet18: ```img_model='resnet'```
+- Nếu dùng ResNet18: ```img_model='resnet'```
