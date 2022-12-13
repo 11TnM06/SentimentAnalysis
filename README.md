@@ -25,7 +25,7 @@ os.chdir('<project_dir>')
 ```
 ## Tải các thư viện quan trọng
 
-Các thư viện được ghi trong file requirements.txt trong cùng thư mục với file README.md
+Các thư viện được ghi trong file ```requirements.txt``` trong cùng thư mục với file ```README.md```
 
 
 ## Dataset
@@ -37,15 +37,20 @@ Sử dụng tập dữ liệu trong cuộc thi bao gồm các file
 
 Thư mục làm việc của dataset
   - Đối với ```foody-resnet.ipynb```  và ```foody-vgg.ipynb```: ```"/kaggle/input/foodyvnu/Data"```
-  - Đối với ```foody-bert.ipynb```: ```"/kaggle/input/trainfoodjson/"``` và ```/kaggle/input/dataset/```
+  - Đối với ```foody-bert.ipynb```: 
+    - Thư mục của train data: ```"/kaggle/input/trainfoodjson/"``` 
+    
+    - Thư mục của test d```/kaggle/input/dataset/```
 
 ## Model
 
-Đầu ra của mô hình được lưu trong thư mục /kaggle/working.
+Đầu ra của mô hình được lưu trong thư mục ```/kaggle/working```.
 
 Trong đó:
 - File có dạng .csv là đầu ra của bài toán 
 - File có dạng .pth là model được trích xuất.
+
+Link GoogleDrive lưu trữ các model được ghi trong ```link_models.txt``` trong cùng thư mục với ```README.md```
 ## Train
 
 Mô hình được huấn luyện trên Kaggle. 
@@ -55,3 +60,5 @@ Mô hình được huấn luyện trên Kaggle.
 - Nếu dùng VGG11: ```img_model='vgg'```
 
 - Nếu dùng ResNet18: ```img_model='resnet'```
+
+*Lưu ý: Không cần chạy hoàn thành tất cả partitions do mỗi partition sẽ cho 1 file kết quả, chỉ cần chọn 1 file để submit. Nên chọn các file có sinh ra từ epoch 3, 4, 5 để đạt kết quả cao nhất. Thời gian hoàn thành 1 partition ~ 55min* 
