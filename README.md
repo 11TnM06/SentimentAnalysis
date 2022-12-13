@@ -9,13 +9,17 @@ Classify Food Reviews using Sentiment Analysis techniques
 
 20020295 - Nguyễn Đăng Huỳnh 
 
-20020014 - Phạm Nguyễn Tuấn Hoàng
+20020015 - Phạm Nguyễn Tuấn Hoàng
 
 ## Kết quả
 
 | MODEL | Bert | ResNet-18 | VGG-11 |
 |--------------|-------|------|-------|
 | AUC - ROC | 0.94 | 0.89 | 0.903 |
+
+## Code
+
+Code của project được lưu trong thư mục ```Code``` trong cùng thư mục với file ```README.md```
 ## Chuyển đến thư mục làm việc hiện tại
 Thay đường dẫn đến thư mục của bạn ở cell đầu tiên. Ví dụ:
 ```Python
